@@ -4,7 +4,7 @@
     <span>{{card.elixirCost}}</span>
   </div>
   <img class="img" 
-    [src]="getImageUrl(card)" 
+    [src]="urlImage" 
     (click)="showCardDetails(card._id)"/>
   <div class="card-details">
     <h1>{{card.name}}</h1>
