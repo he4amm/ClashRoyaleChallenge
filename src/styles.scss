@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0px;
+    padding: 0px 0px;
+    background-color: #785a3e;
+}
+
+* {
+    font-family: "ClashofClansFont";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button {
+    text-shadow: 2px 3px 0px #000000;
+}
+
+h1 {
+    font-size: 1.2em;
+}
+
+button {
+    font-size: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 0.9em;
+    }
+    button {
+        font-size: 0.8em;
+    }
+}
+
+@font-face {
+    font-family: "ClashofClansFont";
+    src: url("/assets/font/ClashofClansFont/Supercell-magic-webfont.ttf") format("truetype");
+}

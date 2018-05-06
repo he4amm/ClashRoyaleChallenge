@@ -1,0 +1,27 @@
+#header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px 40px 25px;
+    background: url(/assets/img/header.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    .header-title {
+        color: #fff;
+    }
+    .header-btn {
+        cursor: pointer;
+        color: #fff;
+        padding: 5px 15px;
+        border: 1px solid #2b1d19;
+        outline: none;
+        border-radius: 5px;
+        background-color: #5e3f2f;
+        box-shadow: 3px 3px 3px #000;
+        &:hover {
+            box-shadow: 3px 5px 3px #000;
+        }
+    }
+}
