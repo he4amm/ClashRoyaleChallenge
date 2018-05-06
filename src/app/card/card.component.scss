@@ -1,0 +1,71 @@
+.card {
+    position: relative;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    &.show-details {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px 0px;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 99;
+        max-height: 100vh;
+        overflow: scroll;
+        .img {
+            width: 50vw;
+            max-width: 300px;
+            cursor: default;
+        }
+        .elixir {
+            display: none;
+        }
+        .card-details,
+        .close {
+            display: block;
+        }
+    }
+    .img {
+        width: 100%;
+        cursor: pointer;
+    }
+    .elixir {
+        position: absolute;
+        top: -10px;
+        left: -9px;
+        width: 3.3vw;
+        min-width: 25px;
+        height: 4vw;
+        min-height: 35px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/assets/img/elixir.png);
+        background-size: 100% 100%;
+    }
+    .card-details {
+        display: none;
+        color: #fff;
+        text-align: center;
+        padding: 0px 20px 20px;
+        max-width: 600px;
+    }
+    .close {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        display: none;
+        color: #fff;
+        font-size: 2em;
+        display: none;
+        cursor: pointer;
+    }
+}

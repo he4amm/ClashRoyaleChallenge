@@ -1,2 +1,15 @@
-<div id="body-container">
+<div id="container">
+    <app-header 
+        (generateCards)="generateCards()"></app-header>
+
+    <div class="content">
+        <app-card
+            *ngFor="let card of randomDeckCards"
+            [card]="card"
+            [cardDetailsActivated]="cardDetailsActivated"
+            (activateCardDetails)="cardDetailsActivated = $event"></app-card>
+    </div>
+
+    <app-footer
+        [cards]="randomDeckCards"></app-footer>
 </div>

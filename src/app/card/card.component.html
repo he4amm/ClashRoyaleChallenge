@@ -1,0 +1,16 @@
+<div class="card"
+  [class.show-details]="cardDetailsActivated === card._id">
+  <div class="elixir">
+    <span>{{card.elixirCost}}</span>
+  </div>
+  <img class="img" 
+    [src]="getImageUrl(card)" 
+    (click)="showCardDetails(card._id)"/>
+  <div class="card-details">
+    <h1>{{card.name}}</h1>
+    <p>{{card.rarity}} - {{card.type}} - {{card.elixirCost}}</p>
+    <p>{{card.description}}</p>
+  </div>
+  <span class="close"
+    (click)="showCardDetails('')">X</span>
+</div>
