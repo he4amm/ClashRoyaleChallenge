@@ -11,7 +11,7 @@ export class DataService {
   constructor(
     private http: HttpClient
   ) {
-    this.baseUrl = 'http://www.clashapi.xyz';
+    this.baseUrl = 'https://clashapi.now.sh';
   }
 
   getDeck(): Observable<any> {
